@@ -1,5 +1,5 @@
 <?php
-$nav_links = ["index.php" => "Главная", "about.php" => "О нас", "contacts.php" => "Контакты"];
+$nav_links = ["index.php" => "Главная", "register.php" => "Регистрация", "contacts.php" => "Контакты"];
 ?>
 
 <!doctype html>
