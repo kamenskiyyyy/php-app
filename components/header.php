@@ -25,7 +25,7 @@ $nav_links = ["index.php" => "Главная", "about.php" => "О нас", "cont
             rel="stylesheet"
     />
     <!-- MDB -->
-    <script
+    <script defer
             type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
     ></script>
@@ -33,8 +33,8 @@ $nav_links = ["index.php" => "Главная", "about.php" => "О нас", "cont
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container">
         <a class="navbar-brand" href="#">PHP Test</a>
         <button
                 class="navbar-toggler"

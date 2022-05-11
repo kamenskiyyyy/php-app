@@ -1,3 +1,3 @@
-<footer>Все права защищены &copy; <?= date("Y") ?></footer>
+<footer class="container">Все права защищены &copy; <?= date("Y") ?></footer>
 </body>
 </html>
