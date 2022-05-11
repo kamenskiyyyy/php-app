@@ -1,3 +1,7 @@
+<?php
+$nav_links = ["index.php" => "Главная", "about.php" => "О нас", "contacts.php" => "Контакты"];
+?>
+
 <!doctype html>
 <html lang="ru">
 <head>
@@ -28,9 +32,31 @@
     <title><?= $page_title ?> </title>
 </head>
 <body>
-<nav>
-    <a href="index.php">Главная</a> |
-    <a href="about.php">О нас</a>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">PHP Test</a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <?php foreach ($nav_links as $link => $title) {
+                    echo "<li class=\"nav-item\">
+                            <a class=\"nav-link active\" aria-current=\"page\" href=\"$link\">$title</a>
+                          </li>";
+                } ?>
+            </ul>
+        </div>
+    </div>
 </nav>
 
 
