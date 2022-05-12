@@ -29,7 +29,7 @@ $nav_links = ["index.php" => "Главная", "register.php" => "Регистр
             type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
     ></script>
-    <title><?= $page_title ?> </title>
+    <title><?= $page_title ?> | PHP Test</title>
 </head>
 <body>
 
@@ -59,4 +59,4 @@ $nav_links = ["index.php" => "Главная", "register.php" => "Регистр
     </div>
 </nav>
 
-
+<div class="container">
